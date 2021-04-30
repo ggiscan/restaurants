@@ -6,7 +6,6 @@ import org.interview.model.Restaurant;
 import org.interview.model.Suppliers;
 import org.interview.service.DiscountService;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -33,14 +32,7 @@ public class Problem2 {
     }
 
     //can return null if no dish is found
-    static Pair<Restaurant, Dish> bestDealFor(List<Restaurant> restaurants, Dish.Name dishName) throws Exception {
+    static Pair<Restaurant, Dish> bestDealFor(List<Restaurant> restaurants, Dish.Name dishName) {
         return null;
-    }
-
-    private static List<Pair<Restaurant, Dish>> concatLists(List<Pair<Restaurant, Dish>> l1, List<Pair<Restaurant, Dish>> l2) {
-        List<Pair<Restaurant, Dish>> result = new ArrayList<>(l1.size() + l2.size());
-        result.addAll(l1);
-        result.addAll(l2);
-        return result;
     }
 }
